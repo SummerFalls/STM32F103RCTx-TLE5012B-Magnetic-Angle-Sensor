@@ -24,10 +24,10 @@
 
 </div>
 
-这是英飞凌 360° 磁角度传感器 `TLE5012B` 的测试验证工程，移植了英飞凌 TLE5012B [官方 Github 仓库][TLE5012-Magnetic-Angle-Sensor-Github] 上的 C++ 代码到 STM32 平台，具体涉及到的文件为以下两个，其它文件为使用 `3-Wire` 方式进行通讯时才需要：
+这是英飞凌 360° 磁角度传感器 `TLE5012B` 的测试验证工程，移植了英飞凌 TLE5012B :package: [官方 Github 仓库][TLE5012-Magnetic-Angle-Sensor-Github] 上的 C++ 代码到 STM32 平台，具体涉及到的文件为以下两个，其它文件为使用 `3-Wire` 方式进行通讯时才需要：
 
-- [Tle5012b_4wire.h](https://github.com/Infineon/TLE5012-Magnetic-Angle-Sensor/blob/master/src/Tle5012b_4wire.h)
-- [Tle5012b_4wire.cpp](https://github.com/Infineon/TLE5012-Magnetic-Angle-Sensor/blob/master/src/Tle5012b_4wire.cpp)
+- :file_folder: [Tle5012b_4wire.h](https://github.com/Infineon/TLE5012-Magnetic-Angle-Sensor/blob/master/src/Tle5012b_4wire.h)
+- :file_folder: [Tle5012b_4wire.cpp](https://github.com/Infineon/TLE5012-Magnetic-Angle-Sensor/blob/master/src/Tle5012b_4wire.cpp)
 
 初次验证该传感器功能时，使用了官方的 [Angle Sensor 2GO Kit][Angle-Sensor-2GO-Kit] 系列套件的 [TLE5012B_E1000_MS2GO][TLE5012B_E1000_MS2GO]，配合附带的上位机程序进行了测试。
 
@@ -57,7 +57,7 @@
 
 最后选择了 [#1 Issue: Example connection scheme for tle5012be1000 chip and microcontorller][TLE5012-Magnetic-Angle-Sensor-Github-Issue] 中的不串接电阻，通过代码控制 MOSI 脚对应的 GPIO 口的状态实现了数据的正常通讯（`SPI 发送 Command 命令字之后，将 MOSI 脚的 GPIO 切换为高阻态（浮空输入），再进行接收数据字和安全字，接收完毕后再切换回复用推挽输出`）
 
-以下为以上 Issue 中英飞凌官方仓库维护人员 [`MorganSandercock` 的原话][TLE5012-Magnetic-Angle-Sensor-Github-Issue-issuecomment]：
+:speech_balloon: 以下为以上 Issue 中英飞凌官方仓库维护人员 [`MorganSandercock` 的原话][TLE5012-Magnetic-Angle-Sensor-Github-Issue-issuecomment]：
 
 > Yes...
 connect CSQ(3) to any convenient uC pin to use as chip-select
@@ -79,7 +79,7 @@ connect DATA(4) to MOSI via a resistor. Use anything between 3.3K and 10K.
 - Keil uVision5.27 及以上
 - STM32CubeMX 5.6.1 及以上
 
-## 参考资料
+## :books: 参考资料
 
 1. [TLE5012B 磁角度传感器官网介绍页面][TLE5012B-Overview]
 2. [TLE5012B 用户手册][TLE5012-User-Manual]
