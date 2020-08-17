@@ -18,7 +18,7 @@
 
 ## :book: 简介
 
-<div style = "text-align: center; margin: auto; width: 100%;">
+<div align="center">
 
 ![Infineon_Logo][Infineon_Logo]
 
@@ -31,7 +31,7 @@
 
 初次验证该传感器功能时，使用了官方的 [Angle Sensor 2GO Kit][Angle-Sensor-2GO-Kit] 系列套件的 [TLE5012B_E1000_MS2GO][TLE5012B_E1000_MS2GO]，配合附带的上位机程序进行了测试。
 
-<div style = "text-align: center; margin: auto; width: 80%;">
+<div align="center">
 
 | ![TLE5012B_BulkSensor][TLE5012B_BulkSensor] | ![TLE5012B_E1000_MS2GO_Pic][TLE5012B_E1000_MS2GO_Pic] |
 |:-------------------------------------------:|:-----------------------------------------------------:|
