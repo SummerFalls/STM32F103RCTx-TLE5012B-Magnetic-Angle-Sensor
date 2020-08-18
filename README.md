@@ -16,7 +16,7 @@
  */
 ```
 
-## :book: ¼ò½é
+## :book: ç®€ä»‹
 
 <div align="center">
 
@@ -24,18 +24,18 @@
 
 </div>
 
-ÕâÊÇÓ¢·ÉÁè 360¡ã ´Å½Ç¶È´«¸ĞÆ÷ `TLE5012B` µÄ²âÊÔÑéÖ¤¹¤³Ì£¬ÒÆÖ²ÁËÓ¢·ÉÁè TLE5012B :package: [¹Ù·½ Github ²Ö¿â][TLE5012-Magnetic-Angle-Sensor-Github] ÉÏµÄ C++ ´úÂëµ½ STM32 Æ½Ì¨£¬¾ßÌåÉæ¼°µ½µÄÎÄ¼şÎªÒÔÏÂÁ½¸ö£¬ÆäËüÎÄ¼şÎªÊ¹ÓÃ `3-Wire` ·½Ê½½øĞĞÍ¨Ñ¶Ê±²ÅĞèÒª£º
+è¿™æ˜¯è‹±é£å‡Œ 360Â° ç£è§’åº¦ä¼ æ„Ÿå™¨ `TLE5012B` çš„æµ‹è¯•éªŒè¯å·¥ç¨‹ï¼Œç§»æ¤äº†è‹±é£å‡Œ TLE5012B :package: [å®˜æ–¹ Github ä»“åº“][TLE5012-Magnetic-Angle-Sensor-Github] ä¸Šçš„ C++ ä»£ç åˆ° STM32 å¹³å°ï¼Œå…·ä½“æ¶‰åŠåˆ°çš„æ–‡ä»¶ä¸ºä»¥ä¸‹ä¸¤ä¸ªï¼Œå…¶å®ƒæ–‡ä»¶ä¸ºä½¿ç”¨ `3-Wire` æ–¹å¼è¿›è¡Œé€šè®¯æ—¶æ‰éœ€è¦ï¼š
 
 - :file_folder: [Tle5012b_4wire.h](https://github.com/Infineon/TLE5012-Magnetic-Angle-Sensor/blob/master/src/Tle5012b_4wire.h)
 - :file_folder: [Tle5012b_4wire.cpp](https://github.com/Infineon/TLE5012-Magnetic-Angle-Sensor/blob/master/src/Tle5012b_4wire.cpp)
 
-³õ´ÎÑéÖ¤¸Ã´«¸ĞÆ÷¹¦ÄÜÊ±£¬Ê¹ÓÃÁË¹Ù·½µÄ [Angle Sensor 2GO Kit][Angle-Sensor-2GO-Kit] ÏµÁĞÌ×¼şµÄ [TLE5012B_E1000_MS2GO][TLE5012B_E1000_MS2GO]£¬ÅäºÏ¸½´øµÄÉÏÎ»»ú³ÌĞò½øĞĞÁË²âÊÔ¡£
+åˆæ¬¡éªŒè¯è¯¥ä¼ æ„Ÿå™¨åŠŸèƒ½æ—¶ï¼Œä½¿ç”¨äº†å®˜æ–¹çš„ [Angle Sensor 2GO Kit][Angle-Sensor-2GO-Kit] ç³»åˆ—å¥—ä»¶çš„ [TLE5012B_E1000_MS2GO][TLE5012B_E1000_MS2GO]ï¼Œé…åˆé™„å¸¦çš„ä¸Šä½æœºç¨‹åºè¿›è¡Œäº†æµ‹è¯•ã€‚
 
 <div align="center">
 
 | ![TLE5012B_BulkSensor][TLE5012B_BulkSensor] | ![TLE5012B_E1000_MS2GO_Pic][TLE5012B_E1000_MS2GO_Pic] |
 |:-------------------------------------------:|:-----------------------------------------------------:|
-|             *Bulk Sensor É¢Æ¬*              |                    *Sensor2Go kit*                    |
+|              Bulk Sensor æ•£ç‰‡               |                     Sensor2Go kit                     |
 
 </div>
 
@@ -43,21 +43,21 @@
 
 ![TLE5012B_E1000_MS2GO_PIN_OUT][TLE5012B_E1000_MS2GO_PIN_OUT]
 
-## :pushpin: MCU Òı½Å·ÖÅäÍ¼
+## :pushpin: MCU å¼•è„šåˆ†é…å›¾
 
-![Òı½Å·ÖÅä][Òı½Å·ÖÅä]
+![å¼•è„šåˆ†é…][å¼•è„šåˆ†é…]
 
-## :warning: ×¢Òâ
+## :warning: æ³¨æ„
 
-½ÓÏß·½Ê½Ñ¡ÔñÁË¹Ù·½ÊÖ²áµ±ÖĞµÄ `ÍÆÍìÊä³ö` ·½Ê½£¬´ï 8 MBits/s£¬¶ø `¿ªÂ©Êä³ö` ·½Ê½µÄ½ÓÏß²»Ò»Ñù£¬ÇÒËÙÂÊÒ²Îª 2 MBits/s¡£
+æ¥çº¿æ–¹å¼é€‰æ‹©äº†å®˜æ–¹æ‰‹å†Œå½“ä¸­çš„ `æ¨æŒ½è¾“å‡º` æ–¹å¼ï¼Œè¾¾ 8 MBits/sï¼Œè€Œ `å¼€æ¼è¾“å‡º` æ–¹å¼çš„æ¥çº¿ä¸ä¸€æ ·ï¼Œä¸”é€Ÿç‡ä¹Ÿä¸º 2 MBits/sã€‚
 
-°´ÕÕ¹Ù·½²Ö¿âÖĞ `README.md ÎÄµµ` ÒÔ¼°¸Ã²Ö¿âÏÂµÄ [#1 Issue: Example connection scheme for tle5012be1000 chip and microcontorller][TLE5012-Magnetic-Angle-Sensor-Github-Issue]£¬»¹ÓĞ [STM32 ÂÛÌ³][STM32 ÂÛÌ³] µÄËµ·¨²âÊÔÁËÔÚ MOSI ½Å´®½ÓÁËÒ»¸ö `4.7K` µç×è£¬ÈçÏÂÍ¼£¬·¢ÏÖÊı¾İÍ¨Ñ¶²¢²»Õı³££¬´ı½øÒ»²½ÑéÖ¤²âÊÔ¡£
+æŒ‰ç…§å®˜æ–¹ä»“åº“ä¸­ `README.md æ–‡æ¡£` ä»¥åŠè¯¥ä»“åº“ä¸‹çš„ [#1 Issue: Example connection scheme for tle5012be1000 chip and microcontorller][TLE5012-Magnetic-Angle-Sensor-Github-Issue]ï¼Œè¿˜æœ‰ [STM32 è®ºå›][STM32 è®ºå›] çš„è¯´æ³•æµ‹è¯•äº†åœ¨ MOSI è„šä¸²æ¥äº†ä¸€ä¸ª `4.7K` ç”µé˜»ï¼Œå¦‚ä¸‹å›¾ï¼Œå‘ç°æ•°æ®é€šè®¯å¹¶ä¸æ­£å¸¸ï¼Œå¾…è¿›ä¸€æ­¥éªŒè¯æµ‹è¯•ã€‚
 
-![Ó²¼ş½ÓÏßÍ¼][Ó²¼ş½ÓÏßÍ¼]
+![ç¡¬ä»¶æ¥çº¿å›¾][ç¡¬ä»¶æ¥çº¿å›¾]
 
-×îºóÑ¡ÔñÁË [#1 Issue: Example connection scheme for tle5012be1000 chip and microcontorller][TLE5012-Magnetic-Angle-Sensor-Github-Issue] ÖĞµÄ²»´®½Óµç×è£¬Í¨¹ı´úÂë¿ØÖÆ MOSI ½Å¶ÔÓ¦µÄ GPIO ¿ÚµÄ×´Ì¬ÊµÏÖÁËÊı¾İµÄÕı³£Í¨Ñ¶£¨`SPI ·¢ËÍ Command ÃüÁî×ÖÖ®ºó£¬½« MOSI ½ÅµÄ GPIO ÇĞ»»Îª¸ß×èÌ¬£¨¸¡¿ÕÊäÈë£©£¬ÔÙ½øĞĞ½ÓÊÕÊı¾İ×ÖºÍ°²È«×Ö£¬½ÓÊÕÍê±ÏºóÔÙÇĞ»»»Ø¸´ÓÃÍÆÍìÊä³ö`£©
+æœ€åé€‰æ‹©äº† [#1 Issue: Example connection scheme for tle5012be1000 chip and microcontorller][TLE5012-Magnetic-Angle-Sensor-Github-Issue] ä¸­çš„ä¸ä¸²æ¥ç”µé˜»ï¼Œé€šè¿‡ä»£ç æ§åˆ¶ MOSI è„šå¯¹åº”çš„ GPIO å£çš„çŠ¶æ€å®ç°äº†æ•°æ®çš„æ­£å¸¸é€šè®¯ï¼ˆ`SPI å‘é€ Command å‘½ä»¤å­—ä¹‹åï¼Œå°† MOSI è„šçš„ GPIO åˆ‡æ¢ä¸ºé«˜é˜»æ€ï¼ˆæµ®ç©ºè¾“å…¥ï¼‰ï¼Œå†è¿›è¡Œæ¥æ”¶æ•°æ®å­—å’Œå®‰å…¨å­—ï¼Œæ¥æ”¶å®Œæ¯•åå†åˆ‡æ¢å›å¤ç”¨æ¨æŒ½è¾“å‡º`ï¼‰
 
-:speech_balloon: ÒÔÏÂÎªÒÔÉÏ Issue ÖĞÓ¢·ÉÁè¹Ù·½²Ö¿âÎ¬»¤ÈËÔ± [`MorganSandercock` µÄÔ­»°][TLE5012-Magnetic-Angle-Sensor-Github-Issue-issuecomment]£º
+:speech_balloon: ä»¥ä¸‹ä¸ºä»¥ä¸Š Issue ä¸­è‹±é£å‡Œå®˜æ–¹ä»“åº“ç»´æŠ¤äººå‘˜ [`MorganSandercock` çš„åŸè¯][TLE5012-Magnetic-Angle-Sensor-Github-Issue-issuecomment]ï¼š
 
 > Yes...
 connect CSQ(3) to any convenient uC pin to use as chip-select
@@ -67,29 +67,29 @@ connect DATA(4) to MOSI via a resistor. Use anything between 3.3K and 10K.
 >
 > If you don't use a resistor between DATA and MOSI then it is possible to modify the library to put MOSI into a high-impedance state after writing the command word and before reading the response. Setting it back to SPI output mode depends on the specific microcontroller, so this is not a simple one-line change to the library.
 
-## :gear: Ó²¼ş & Èí¼ş ĞèÇó
+## :gear: ç¡¬ä»¶ & è½¯ä»¶ éœ€æ±‚
 
-### Ó²¼şĞèÇó
+### ç¡¬ä»¶éœ€æ±‚
 
 - STM32F103RCT6 PCB Board
 - J-Link V9
 
-### Èí¼şĞèÇó
+### è½¯ä»¶éœ€æ±‚
 
-- Keil uVision5.27 ¼°ÒÔÉÏ
-- STM32CubeMX 5.6.1 ¼°ÒÔÉÏ
+- Keil uVision5.27 åŠä»¥ä¸Š
+- STM32CubeMX 5.6.1 åŠä»¥ä¸Š
 
-## :books: ²Î¿¼×ÊÁÏ
+## :books: å‚è€ƒèµ„æ–™
 
-1. [TLE5012B ´Å½Ç¶È´«¸ĞÆ÷¹ÙÍø½éÉÜÒ³Ãæ][TLE5012B-Overview]
-2. [TLE5012B ÓÃ»§ÊÖ²á][TLE5012-User-Manual]
-3. [Angle Sensor 2GO Kit ÏµÁĞÌ×¼ş][Angle-Sensor-2GO-Kit]
-4. [TLE5012B_E1000_MS2GO ÆÀ¹À°å][TLE5012B_E1000_MS2GO]
-5. [¹Ù·½ TLE5012B Github ´úÂë²Ö¿â][TLE5012-Magnetic-Angle-Sensor-Github]
-6. [¹Ù·½ TLE5012B Github ´úÂë²Ö¿â¹ØÓÚMOSI½Å´®½Óµç×èµÄ Issue][TLE5012-Magnetic-Angle-Sensor-Github-Issue]
+1. [TLE5012B ç£è§’åº¦ä¼ æ„Ÿå™¨å®˜ç½‘ä»‹ç»é¡µé¢][TLE5012B-Overview]
+2. [TLE5012B ç”¨æˆ·æ‰‹å†Œ][TLE5012-User-Manual]
+3. [Angle Sensor 2GO Kit ç³»åˆ—å¥—ä»¶][Angle-Sensor-2GO-Kit]
+4. [TLE5012B_E1000_MS2GO è¯„ä¼°æ¿][TLE5012B_E1000_MS2GO]
+5. [å®˜æ–¹ TLE5012B Github ä»£ç ä»“åº“][TLE5012-Magnetic-Angle-Sensor-Github]
+6. [å®˜æ–¹ TLE5012B Github ä»£ç ä»“åº“å…³äºMOSIè„šä¸²æ¥ç”µé˜»çš„ Issue][TLE5012-Magnetic-Angle-Sensor-Github-Issue]
 
-[Òı½Å·ÖÅä]: ./PinOut.jpg
-[Ó²¼ş½ÓÏßÍ¼]: ./ConnectionScheme.png
+[å¼•è„šåˆ†é…]: ./PinOut.jpg
+[ç¡¬ä»¶æ¥çº¿å›¾]: ./ConnectionScheme.png
 [Infineon_Logo]: ./img/ifx_logo.png
 [TLE5012B_E1000_MS2GO_PIN_OUT]: ./img/TLE5012B_Sensor_2Go_Pin_out.png
 [TLE5012B_E1000_MS2GO_Pic]: ./img/TLE5012B_horizontal.png
@@ -102,4 +102,4 @@ connect DATA(4) to MOSI via a resistor. Use anything between 3.3K and 10K.
 [TLE5012-Magnetic-Angle-Sensor-Github]: https://github.com/Infineon/TLE5012-Magnetic-Angle-Sensor
 [TLE5012-Magnetic-Angle-Sensor-Github-Issue]: https://github.com/Infineon/TLE5012-Magnetic-Angle-Sensor/issues/1
 [TLE5012-Magnetic-Angle-Sensor-Github-Issue-issuecomment]: https://github.com/Infineon/TLE5012-Magnetic-Angle-Sensor/issues/1#issuecomment-460507553
-[STM32 ÂÛÌ³]: http://www.stmcu.org.cn/module/forum/thread-621043-1-1.html
+[STM32 è®ºå›]: http://www.stmcu.org.cn/module/forum/thread-621043-1-1.html
