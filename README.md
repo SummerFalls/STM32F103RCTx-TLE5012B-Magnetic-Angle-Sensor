@@ -87,6 +87,7 @@ connect DATA(4) to MOSI via a resistor. Use anything between 3.3K and 10K.
 4. [TLE5012B_E1000_MS2GO 评估板][TLE5012B_E1000_MS2GO]
 5. [官方 TLE5012B Github 代码仓库][TLE5012-Magnetic-Angle-Sensor-Github]
 6. [官方 TLE5012B Github 代码仓库关于MOSI脚串接电阻的 Issue][TLE5012-Magnetic-Angle-Sensor-Github-Issue]
+7. [STM32 论坛中关于 Bulk Sensor 接线的原理图和源码][STM32 论坛]
 
 [引脚分配]: ./PinOut.jpg
 [硬件接线图]: ./ConnectionScheme.png
