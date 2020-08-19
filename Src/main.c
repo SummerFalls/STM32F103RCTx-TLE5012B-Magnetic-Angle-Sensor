@@ -107,46 +107,65 @@ int main(void)
 
     /* Infinite loop */
     /* USER CODE BEGIN WHILE */
-    while (1) {
-        HAL_Delay(300);
+    while (1)
+    {
+        HAL_Delay(500);
 
-        if (checkError == NO_ERROR) {
+        if (checkError == NO_ERROR)
+        {
             checkError = getAngleSpeed(&d);
             printf("角速度: %.04f\r\n", d);
 
-//            checkError = getAngleValue(&d);
-//            printf("角Value: %.04f\r\n", d);
-
-            checkError = getAngleRange(&d);
-            printf("角范围: %.04f\r\n", d);
+            checkError = getAngleValue(&d);
+            printf("角Value: %.04f\r\n", d);
 
             checkError = getNumRevolutions(&numRev);
             printf("转数: %d\r\n", numRev);
 
+            checkError = getUpdAngleSpeed(&d);
+            printf("Upd角速度: %.04f\r\n", d);
+
+            checkError = getUpdAngleValue(&d);
+            printf("Upd角Value: %.04f\r\n", d);
+
+            checkError = getUpdNumRevolutions(&numRev);
+            printf("Upd转数: %d\r\n", numRev);
+
             checkError = getTemperature(&d);
             printf("温度: %.04f\r\n", d);
-        } else {
-            printf("ERROR CODE: 0x%02X\r\n", checkError);
+
+            checkError = getAngleRange(&d);
+            printf("角范围: %.04f\r\n", d);
+
+            printf("\r\n\r\n\r\n");
+        }
+        else
+        {
+            printf("**************************************ERROR CODE: 0x%02X\r\n", checkError);
             checkError = NO_ERROR;
         }
 
-        if (HAL_GPIO_ReadPin(KEY_0_GPIO_Port, KEY_0_Pin) == GPIO_PIN_RESET) {
+        if (HAL_GPIO_ReadPin(KEY_0_GPIO_Port, KEY_0_Pin) == GPIO_PIN_RESET)
+        {
             HAL_Delay(500);
 
-//            checkError = readBlockCRC();
-//            printf("Init done!!! ERROR CODE: 0x%02X\r\n", checkError);
-//            checkError = NO_ERROR;
+            //            checkError = readBlockCRC();
+            //            printf("Init done!!! ERROR CODE: 0x%02X\r\n", checkError);
+            //            checkError = NO_ERROR;
 
-            if (checkError == NO_ERROR) {
-//                checkError = getAngleSpeed(&d);
-//                printf("AngleSpeed: %.04f\r\n", d);
+            if (checkError == NO_ERROR)
+            {
+                //                checkError = getAngleSpeed(&d);
+                //                printf("AngleSpeed: %.04f\r\n", d);
 
-//                checkError = getAngleRange(&d);
-//                printf("AngleRange: %.04f\r\n", d);
+                //                checkError = getAngleRange(&d);
+                //                printf("AngleRange: %.04f\r\n", d);
 
                 checkError = getTemperature(&d);
                 printf("Temperature: %.04f\r\n", d);
-            } else {
+            }
+            else
+            {
                 printf("ERROR CODE: 0x%02X\r\n", checkError);
                 checkError = NO_ERROR;
             }
@@ -178,20 +197,21 @@ void SystemClock_Config(void)
     RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI_DIV2;
     RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL16;
 
-    if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK) {
+    if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
+    {
         Error_Handler();
     }
 
     /** Initializes the CPU, AHB and APB busses clocks
     */
-    RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK | RCC_CLOCKTYPE_SYSCLK
-                                  | RCC_CLOCKTYPE_PCLK1 | RCC_CLOCKTYPE_PCLK2;
+    RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK | RCC_CLOCKTYPE_SYSCLK | RCC_CLOCKTYPE_PCLK1 | RCC_CLOCKTYPE_PCLK2;
     RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
     RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
     RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
     RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
 
-    if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK) {
+    if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)
+    {
         Error_Handler();
     }
 }
@@ -212,7 +232,7 @@ void Error_Handler(void)
     /* USER CODE END Error_Handler_Debug */
 }
 
-#ifdef  USE_FULL_ASSERT
+#ifdef USE_FULL_ASSERT
 /**
   * @brief  Reports the name of the source file and the source line number
   *         where the assert_param error has occurred.

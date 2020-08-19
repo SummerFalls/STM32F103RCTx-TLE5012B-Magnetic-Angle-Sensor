@@ -129,7 +129,7 @@ errorTypes getNumRevolutions(int16_t *numRev);
 //returns the updated angle speed
 errorTypes getUpdAngleSpeed(double *angleSpeed);
 //returns the updated angle value
-errorTypes getUpdAngleValue(double *angleVal);
+errorTypes getUpdAngleValue(double *angleValue);
 //returns the updated number of revolutions
 errorTypes getUpdNumRevolutions(int16_t *numRev);
 //return the temperature
