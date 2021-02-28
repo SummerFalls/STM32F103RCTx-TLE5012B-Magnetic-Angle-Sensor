@@ -1,4 +1,4 @@
-# :beers: F103RCTx_TLE5012B
+# :beers: F103RCTx_TLE5012B <a title="Hits" target="_blank" href="https://github.com/SummerFalls/STM32F103RCTx-TLE5012B-Magnetic-Angle-Sensor"><img src="https://hits.b3log.org/SummerFalls/STM32F103RCTx-TLE5012B-Magnetic-Angle-Sensor.svg"></a>
 
 ```c
 /*
