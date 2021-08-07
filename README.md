@@ -26,8 +26,10 @@
 
 这是英飞凌 360° 磁角度传感器 `TLE5012B` 的测试验证工程，移植了英飞凌 TLE5012B :package: [官方 Github 仓库][TLE5012-Magnetic-Angle-Sensor-Github] 上的 C++ 代码到 STM32 平台，具体涉及到的文件为以下两个，其它文件为使用 `3-Wire` 方式进行通讯时才需要：
 
-- :file_folder: [Tle5012b_4wire.h](https://github.com/Infineon/TLE5012-Magnetic-Angle-Sensor/blob/master/src/Tle5012b_4wire.h)
-- :file_folder: [Tle5012b_4wire.cpp](https://github.com/Infineon/TLE5012-Magnetic-Angle-Sensor/blob/master/src/Tle5012b_4wire.cpp)
+:warning: 本仓库当前对应官方仓库的历史 Commit 为 [5249d6293d2a88779bb38e815aec26316db00599][TLE5012-Magnetic-Angle-Sensor-Github]
+
+- :file_folder: [Tle5012b_4wire.h](https://github.com/Infineon/TLE5012-Magnetic-Angle-Sensor/blob/5249d6293d2a88779bb38e815aec26316db00599/src/Tle5012b_4wire.h)
+- :file_folder: [Tle5012b_4wire.cpp](https://github.com/Infineon/TLE5012-Magnetic-Angle-Sensor/blob/5249d6293d2a88779bb38e815aec26316db00599/src/Tle5012b_4wire.cpp)
 
 初次验证该传感器功能时，使用了官方的 [Angle Sensor 2GO Kit][Angle-Sensor-2GO-Kit] 系列套件的 [TLE5012B_E1000_MS2GO][TLE5012B_E1000_MS2GO]，配合附带的上位机程序进行了测试。
 
@@ -100,7 +102,7 @@ connect DATA(4) to MOSI via a resistor. Use anything between 3.3K and 10K.
 [TLE5012-User-Manual]: https://www.infineon.com/dgdl/Infineon-Angle_Sensor_TLE5012B-UM-v01_02-en-UM-v01_02-EN.pdf?fileId=5546d46146d18cb40146ec2eeae4633b
 [Angle-Sensor-2GO-Kit]: https://www.infineon.com/cms/en/product/promopages/sensors-2go/#angle-sensor-2go
 [TLE5012B_E1000_MS2GO]: https://www.infineon.com/cms/en/product/evaluation-boards/tle5012b_e1000_ms2go/
-[TLE5012-Magnetic-Angle-Sensor-Github]: https://github.com/Infineon/TLE5012-Magnetic-Angle-Sensor
+[TLE5012-Magnetic-Angle-Sensor-Github]: https://github.com/Infineon/TLE5012-Magnetic-Angle-Sensor/tree/5249d6293d2a88779bb38e815aec26316db00599
 [TLE5012-Magnetic-Angle-Sensor-Github-Issue]: https://github.com/Infineon/TLE5012-Magnetic-Angle-Sensor/issues/1
 [TLE5012-Magnetic-Angle-Sensor-Github-Issue-issuecomment]: https://github.com/Infineon/TLE5012-Magnetic-Angle-Sensor/issues/1#issuecomment-460507553
 [STM32 论坛]: http://www.stmcu.org.cn/module/forum/thread-621043-1-1.html
